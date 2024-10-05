@@ -1,38 +1,68 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;600&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
-} 
- 
- .main{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
     background-image: url(Assets/Img/BG.jpg);
     background-position: center center;
     background-repeat: none;
-    background-size: max(1200px , 100vw);
+    background-size: max(1200px, 100vw);
 
     height: 80vh;
-    position:relative;
+    position: relative;
 }
 
-.main box{
-    height:80vh;
+.main box {
+    height: 80vh;
     width: 100%;
-    opacity:0.44;
-    position: absolute; 
+    opacity: 0.44;
+    position: absolute;
     top: 0;
     background-color: black;
 }
 
-nav{
+nav {
     max-width: 80vw;
     justify-content: space-between;
-    margin:auto;
+    margin: auto;
     display: flex;
-    height: 62px; 
+    height: 62px;
     align-items: center;
-    
+
 }
 
-nav img{
+nav img {
     color: red;
     width: 120px;
+    position: relative;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.box2 {
+    font-family: 'Martel Sans', sans-serif, ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.box2:first-line{
+    font-weight:bolder;
+    font-size: 48px;
+}
+.box2:nth-child(2){
+    font-weight: 700;
+    font-size: 24px;
 }
