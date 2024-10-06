@@ -7,20 +7,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: black;
+}
+
 .main {
     background-image: url(Assets/Img/BG.jpg);
     background-position: center center;
     background-repeat: none;
     background-size: max(1200px, 100vw);
 
-    height: 80vh;
+    height: 70vh;
     position: relative;
 }
 
-.main box {
-    height: 80vh;
+.main {
+    height: 70vh;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.74;
     position: absolute;
     top: 0;
     background-color: black;
@@ -49,20 +53,83 @@ nav button {
 
 .box2 {
     font-family: 'Martel Sans', sans-serif, ;
-    height: 100%;
+    height: calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
-    position: relative;
+    position: center;
 }
 
-.box2:first-line{
-    font-weight:bolder;
+.box2:first-child {
+    font-weight: bolder;
     font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.box2:nth-child(2){
-    font-weight: 700;
-    font-size: 24px;
+
+
+
+.box2:p{
+    font-weight: 400;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.separation{
+    height: 7px;
+    background-color:gray;
+}
+.btn{
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size:medium;
+    background-color:rgba(23, 23, 23,0.7);
+    border-radius: 1px;
+    background-color: rgba(23, 23, 23,0.4);
+
+
+
+}
+
+.btn-red {
+    background-color: red;
+    font-weight: 400;
+    padding: 3px 20px;
+    font-size: 20px;
+    border-radius: 1px;
+    border-color:rgba(23, 23, 23, 0.7);
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    
+    
+}
+.main input{
+    padding: 3px 24px;
+    background-color: transparent;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 900;
+    border-color:rgba(23, 23, 23, 0.5);
+    border: 2px solid rgba(23, 23, 23, 0.6);
+     
+    
+
+}
+
+
+.btn-red-sn{
+    background-color:red;
+    padding: 3px 10px;
+    font-size:medium;
+    font-weight: bold;
+    border-radius: 0%;
+    border-color: red;
+    color: white;
+    border-color: rgba(23, 23, 23, 0.5);
 }
